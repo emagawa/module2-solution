@@ -1,0 +1,107 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+    box-sizing: border-box;
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-weight: bold;
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+h2 {
+    border: 3px solid #000000;
+    font-size: 20px;
+    text-align: center;
+    float:right;
+    padding-left: 30px;
+    padding-right: 30px;
+    position: relative;
+    right: 10px;
+    bottom: 5px;
+    width: 150px;
+    margin-bottom: auto;
+}
+
+p {
+    margin: 10px;
+    border: 3px solid #000000;
+    background-color: #808080;
+    padding-top: 50px;
+    padding-left: 10px;
+    padding-right:10px;
+	font-size: 20px;
+}
+
+.chicken {
+	color: black;
+	background-color: #FFC0CB;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.beef {
+    color: white;
+    background-color: #FF0000;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.sushi {
+	color: black;
+    background-color: #FFFF00;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+/* Simple Responsive Framework. */
+.row {
+  width: 100%;
+}
+
+/********** Large devices only **********/
+@media (min-width: 992px) {
+	
+	.col-lg-4 {
+		float: left;
+	}
+
+  	.col-lg-4 {
+    	width: 33.33%;
+  	}
+}
+
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+
+  	.col-md-6, .col-md-12 {
+    	float: left;
+	}
+
+  	.col-md-6 {
+    	width: 50%;
+  	}
+
+  	.col-md-12 {
+    	width: 100%;
+  	}
+}
+
+/********** Small devices only **********/
+@media (max-width: 767px) {
+
+	.col-sm-12 {
+    	float: left;
+	}
+	.col-sm-12{
+    	width: 100%;
+	}
+
+h2 {
+		bottom: 15px;
+	}
+}
